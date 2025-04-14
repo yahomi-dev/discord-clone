@@ -23,6 +23,9 @@
 			"style": {
 				"noNonNullAssertion": "off",
 				"useFilenamingConvention": "error"
+			},
+			"suspicious": {
+				"noArrayIndexKey": "off"
 			}
 		}
 	},
