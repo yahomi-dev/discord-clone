@@ -1,9 +1,10 @@
+import { MdExpandMore } from 'react-icons/md';
 import reactLogo from '../assets/react.svg';
 
 const SideBar = () => {
 	return (
-		<div className="sidebar flex flex-[0.35] h-[100vh] bg-gray-500">
-			<div className="sidebar-left flex flex-col mt-4 px-4 py-2 space-y-3 items-center bg-black">
+		<div className="sidebar flex flex-[0.35] h-[100vh] bg-gray-600">
+			<div className="sidebar-left flex flex-col px-4 py-2 space-y-3 items-center bg-gray-800">
 				{Array.from({ length: 2 }, (_, i) => {
 					return (
 						<div
@@ -15,7 +16,16 @@ const SideBar = () => {
 					);
 				})}
 			</div>
-			<div className="sidebar-right">SideBarRight</div>
+
+			<div className="sidebar-right w-75 p-5 bg-gray-700">
+				{/* top */}
+				<div className="sidebar-top flex justify-between items-center text-white">
+					<span className="font-bold">Discord</span>
+					<MdExpandMore className="" size={25} />
+				</div>
+
+				{/* channels */}
+			</div>
 		</div>
 	);
 };
