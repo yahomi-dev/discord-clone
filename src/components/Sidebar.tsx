@@ -1,4 +1,4 @@
-import { MdExpandMore } from 'react-icons/md';
+import { MdAdd, MdExpandMore } from 'react-icons/md';
 import reactLogo from '../assets/react.svg';
 
 const SideBar = () => {
@@ -21,10 +21,21 @@ const SideBar = () => {
 				{/* top */}
 				<div className="sidebar-top flex justify-between items-center text-white">
 					<span className="font-bold">Discord</span>
-					<MdExpandMore className="" size={25} />
+					<MdExpandMore size={25} />
 				</div>
 
 				{/* channels */}
+
+				<div className="sidebar-channels">
+					<div className="sidebar-channels-header flex justify-between items-center text-white">
+						<div className="sidebar-header flex">
+							<MdExpandMore className="cursor-pointer" size={25} />
+							<p>テキストチャンネル</p>
+						</div>
+
+						<MdAdd className="cursor-pointer" size={25} />
+					</div>
+				</div>
 			</div>
 		</div>
 	);
