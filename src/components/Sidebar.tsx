@@ -1,5 +1,6 @@
 import { MdAdd, MdExpandMore } from 'react-icons/md';
 import reactLogo from '../assets/react.svg';
+import { SidebarChannel } from './SidebarChannel';
 
 const SideBar = () => {
 	return (
@@ -25,7 +26,6 @@ const SideBar = () => {
 				</div>
 
 				{/* channels */}
-
 				<div className="sidebar-channels">
 					<div className="sidebar-channels-header flex justify-between items-center text-white">
 						<div className="sidebar-header flex">
@@ -34,6 +34,12 @@ const SideBar = () => {
 						</div>
 
 						<MdAdd className="cursor-pointer" size={25} />
+					</div>
+
+					<div className="sidebar-channel-list space-y-2">
+						<SidebarChannel />
+						<SidebarChannel />
+						<SidebarChannel />
 					</div>
 				</div>
 			</div>
